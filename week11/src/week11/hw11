@@ -1,0 +1,6 @@
+
+1  graph hw{ A--C--B--F--E;
+C--D}
+
+2 DFS:BCAEFD
+  BFS:BCFDAE

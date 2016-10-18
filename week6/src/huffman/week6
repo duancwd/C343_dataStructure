@@ -1,0 +1,82 @@
+7.18
+   (a) is right.
+(a) Selection sort O(n^2)
+
+    for (int i = 0; i < arr.length; i++) {
+        // Assume first element is min
+        min = i;
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+    
+    
+(b) Bubble sort O(n^2)
+    void bubbleSort(int ar[])
+{
+   for (int i = (ar.length - 1); i >= 0; i--)
+   {
+      for (int j = 1; j ¡Ü i; j++)
+      {
+         if (ar[j-1] > ar[j])
+         {
+              int temp = ar[j-1];
+              ar[j-1] = ar[j];
+              ar[j] = temp;
+   } } } }
+     
+     
+(c) Merge sort O(n^2)
+for (int i = 0; i < 5; i++) {
+    System.out.println(String.format("score #%d: ", i + 1));
+    scores[i] = kb.nextDouble();
+}
+Array.sort(score);
+double total = 0.00;
+for (int i = 1; i < 4; i++) {
+
+        total = total + score[i];
+
+}
+(d) Quick sort O(nlogn)
+
+while (true) {
+  do {
+                i++;
+     } while (arr[i] < pivot)
+     do {
+        j--;
+      } while (arr[j] > pivot)
+      if (i < j)
+         Sort.swap(arr, i, j)
+         else
+           return j;
+
+    
+(e) Bin-sort O(nlogn)
+ for(int i = 0; i < nums.length; i++) {
+         int count = 0;
+         for(int j = 0; j < nums.length; j++) {
+             if(nums[j] == nums[i]) {
+                 count++;
+             }
+         }
+ 
+         if(count > maxCount) {
+             maxValue = nums[i];
+             maxCount = count;
+         }
+     }
+     return maxValue;
+
+2. Let there are 100 digits. Then it will have 50 A, 35 T, 10 C, 5 G.
+uncompressed: 2x50+2x35+2x10+2x5=200
+compressed: A(1) T(11) G(001) C(000)
+            1x50+2x35+10x3+5x3=165
+            Compresion ratio: 200/165=1.21
+            
+            
+            
+            
+            

@@ -1,0 +1,102 @@
+
+/**
+ * @author chaoduan
+ *
+ */
+
+
+1
+a O(1)
+b O(n^2)
+c O(n^2)
+d O(n^2)
+
+2
+Define an ADT for a two-dimensional array of integers. 
+Specify precisely the basic operations that can be performed on such arrays. 
+(You may refer to the ADT for a list of integers as shown in Example 1.4 
+on page 9 of the textbook) 
+
+ a function that returns the number of rows
+ a function that returns the number of columns
+ Insert a new integer at a particular position in the list(ex:row=2,column=3)
+ Return the number of integers currently in the list
+ return true  if the 2D list have number z
+ 
+ 
+ 3
+ Specify your ADT for two-dimensional arrays of integers in the form of an abstract class declaration in Java, 
+ showing the functions, 
+ their parameters, and their return types
+package assignment1;
+
+import java.util.ArrayList;
+
+public interface twoDarrays {
+	
+	/**
+	 * private int x;
+	 * private int y;
+	 * private int[][] list;
+	 */
+
+
+
+	/*a function that returns the number of rows
+	 * @return a list include all of the number of rows
+	 */
+	public ArrayList row(int row);
+
+	/*	ArrayList a = new ArrayList();
+		for(int column=0;  column< y; column++){
+			a.add(list[row][column]);
+		}
+		return a;
+	*/
+
+	
+	
+	/*
+	 * a function that returns the number of columns
+	 * @return a list include all of the number of columns
+	 */
+	public ArrayList column(int column);
+		
+		/*ArrayList b = new ArrayList();
+		for(int row=0;  row< x; row++){
+			b.add(list[row][column]);
+		}
+		return b;*/
+	
+/*
+ * @Return the number of integers currently in the list
+ */
+	public ArrayList allnumber( );
+		/*ArrayList c = new ArrayList();
+		for(int row=0;  row< x; row++){
+			for(int column=0;  column< y; column++){
+				c.add(list[row][column]);
+			}
+			
+		}
+		return c;
+	*/
+	/*
+	 *@return true  if the 2D list have number z,
+	 */
+	public boolean checknumberZ(int z );	
+	
+/*
+ * Insert a new integer at a particular position in the list(ex:row=2,column=3)
+ */
+	public void Insert(int x2, int y2, int num);
+		
+		//list[x2-1][y2-1]=num;
+		
+		
+	
+	
+	
+
+
+}
